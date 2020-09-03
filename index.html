@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>5 Day Forecast</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="header">Your Weather Forecast</h1>
+
+        <div class="row">
+            <div id="padding">
+                <div class="input-group">
+                    <label id="inputValue">Enter City Name:</label>
+                    <input type="text" class="form-control" value="" id="inputCity">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary mb-2" type="button" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="padding">
+            <form>
+                <div class="form-group">
+                    <div class="city"></div>
+                    <div class="icon"></div>
+                    <div class="date" id="todayDate"></div>
+                    <div class="temp"></div>
+                    <div class="humidity"></div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row" id="padding">
+            <h2>Five Day Forecast:</h2>
+        </div>
+
+        <div class="row">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body" id="dayBox">
+                        <div class="card-title" id="nextDay"></div>
+                        <div class="icon1"></div>
+                        <div class="temp1"></div>
+                        <div class="humidity1"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" id="dayBox">
+                        <div class="card-title" id="twoDays"></div>
+                        <div class="icon2"></div>
+                        <div class="temp2"></div>
+                        <div class="humidity2"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" id="dayBox">
+                        <div class="card-title" id="threeDays"></div>
+                        <div class="icon3"></div>
+                        <div class="temp3"></div>
+                        <div class="humidity3"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" id="dayBox">
+                        <div class="card-title" id="fourDays"></div>
+                        <div class="icon4"></div>
+                        <div class="temp4"></div>
+                        <div class="humidity4"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" id="dayBox">
+                        <div class="card-title" id="fiveDays"></div>
+                        <div class="icon5"></div>
+                        <div class="temp5"></div>
+                        <div class="humidity5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

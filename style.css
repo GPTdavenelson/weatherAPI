@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+#header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-left: -25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#inputCity {
+    margin-left: 10px;
+}
